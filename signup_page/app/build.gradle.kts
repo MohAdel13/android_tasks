@@ -4,11 +4,13 @@ plugins {
 }
 
 android {
-    namespace = "com.example.myapplication"
+    namespace = "com.example.signup_page"
     compileSdk = 33
-
+    buildFeatures{
+        viewBinding = true
+    }
     defaultConfig {
-        applicationId = "com.example.myapplication"
+        applicationId = "com.example.signup_page"
         minSdk = 23
         targetSdk = 33
         versionCode = 1
