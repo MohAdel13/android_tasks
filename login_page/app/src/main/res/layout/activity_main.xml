@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/back"
+    android:backgroundTint="#9F0C0101"
+    android:backgroundTintMode="src_over"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:backgroundTintMode="src_atop"
+        app:cardBackgroundColor="#4BFFFFFF"
+        app:cardCornerRadius="70dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTintMode="screen"
+            android:foregroundTintMode="add">
+
+            <ImageView
+                android:id="@+id/avatarIV"
+                android:layout_width="168dp"
+                android:layout_height="114dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/person"
+                app:tint="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/emailET"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:drawableStart="@mipmap/email"
+                android:drawablePadding="20dp"
+                android:drawableTint="#FFFFFF"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:paddingStart="10dp"
+                android:textColor="#8BFFFFFF"
+                android:textColorHint="#8BFFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/avatarIV" />
+
+            <EditText
+                android:id="@+id/passET"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:drawableStart="@mipmap/pass"
+                android:drawablePadding="20dp"
+                android:drawableTint="#FFFFFF"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:hint="Password"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:paddingStart="10dp"
+                android:textColor="#8BFFFFFF"
+                android:textColorHint="#8BFFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/emailET" />
+
+            <CheckBox
+                android:id="@+id/remeberCB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/coustard"
+                android:text="Remember me"
+                android:textColor="#8BFFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/passET" />
+
+            <TextView
+                android:id="@+id/forgotTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/coustard"
+                android:shadowColor="#AB070202"
+                android:shadowDx="5"
+                android:shadowDy="5"
+                android:shadowRadius="5"
+                android:text="Forgot password?"
+                android:textColor="#8BFFFFFF"
+                app:layout_constraintBottom_toBottomOf="@+id/remeberCB"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/remeberCB"
+                app:layout_constraintTop_toTopOf="@+id/remeberCB"
+                app:layout_constraintVertical_bias="0.551" />
+
+            <Button
+                android:id="@+id/loginBTN"
+                android:layout_width="300dp"
+                android:layout_height="66dp"
+                android:layout_marginBottom="30dp"
+                android:elevation="20dp"
+                android:fontFamily="@font/coustard"
+                android:text="Login"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
