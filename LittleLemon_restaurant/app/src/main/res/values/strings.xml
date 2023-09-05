@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">LittleLemon</string>
+    <string name="littleLemon">Little Lemon</string>
+    <string name="chicago">Chicago</string>
+    <string name="restaurant_description">We are a family owned Mediterranean
+        restaurant, focused on traditional recipes served with a modern
+        twist.</string>
+    <string name="reserve_a_table">Reserve a table</string>
+    <string name="greek_salad_description">"The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons. "</string>
+    <string name="greek_salad">Greek Salad</string>
+    <string name="_12_99">$12.99</string>
+</resources>
